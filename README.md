@@ -181,6 +181,17 @@ Lookalike Modeling: Use the purchasing profiles of these top five earners to bui
 Category Expansion: Evaluate if the limited Table assortment (34 products) is meeting market demand or if adding new styles could capture untapped revenue.
 
 ## Challenges
+1. Data Cleaning & Integrity
+The Challenge: Dealing with transactional anomalies like negative quantities, zero-unit prices, and inconsistent delivery dates (like the 0-day and 214-day outliers you found).
+Identified and handled significant data noise, including return transactions represented as negative values, ensuring that the final $10.67M revenue figure was accurate and not inflated by raw system errors.
+
+2. SQL Schema Design (The Surrogate Key Challenge)
+The Challenge: Moving from a flat Excel-style table to a relational Star Schema.
+Transitioned raw transactional data into a structured Star Schema by creating dimension tables (DimProduct, DimCustomer). The primary challenge was generating unique Surrogate Keys to ensure data integrity and optimize join performance within SQL
+   
+3. Handling Duplicate Records (The CTE Challenge)
+The Challenge: The raw data contained multiple entries for the same customer or product, which         threatened to double-count profits.
+Resolved data redundancy issues by implementing Common Table Expressions (CTEs) and window functions (ROW_NUMBER) to programmatically remove duplicate records, ensuring each 'Hero Product' and 'Top Customer' was counted exactly once.
 
 
 
