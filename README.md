@@ -2,6 +2,13 @@
 
 - [Project Overview](#project-overview)
 - [Data Source](#data-source)
+- [Tools Used](#tools-used)
+- [Data Cleaning & Preparation](#data-cleaning-&-preparation)
+- [Objectives](#objectives)
+- [Data Analysis](#data-analysis)
+- [Insight/Finding](#insight/finding)
+- [Recommendations](#recommendations)
+- [Challenges](#challenges)
 
 <img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/b11a29fe-5cfc-4485-84fd-1e7ca287293d" />
 
