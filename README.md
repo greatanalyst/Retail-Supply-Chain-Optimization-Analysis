@@ -1,7 +1,7 @@
 # Retail Supply Chain Optimization Analysis
 
-- [Project Overview](#projectoverview)
-- [Data Source](#datasource)
+- [Project Overview](#project-overview)
+- [Data Source](#data-source)
 
 <img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/b11a29fe-5cfc-4485-84fd-1e7ca287293d" />
 
