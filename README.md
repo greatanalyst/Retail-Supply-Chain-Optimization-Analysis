@@ -152,10 +152,36 @@ ORDER BY 2 desc
  Tables	    34  */
 ```
 ## Insight/Finding
+- 1. Operational Bottleneck: The data reveals a significant lag in the Furniture category, with bulky items like Tables taking over 5 weeks to ship.
+- 2. Segment Disparity: Home Office orders are fulfilled 11% faster than Corporate orders, suggesting smaller average order sizes might be bypassing bulk logistics bottlenecks.
+- 3. Data Anomaly: The 214-day delay and 0-day fulfillment suggest a mix of severe stockouts and immediate local pickup or digital inventory.
+  Category Contrast: Bookcases dominate the fastest deliveries, while specialized furniture and decor face extreme logistics bottlenecks.
+- 4. Beyond basic sales tracking, I performed a comparative analysis using SQL aggregations to identify Hero Products. By calculating the profit-to-sales ratio, I identified that while Tables had high sales volume, Chairs contributed 4x more to the bottom line, allowing for data-driven recommendations on inventory prioritization.
+- 5. Revenue Concentration: The Consumer segment generates nearly 3x the profit of Home Office, identifying it as the critical driver of overall business sustainability.
+Segment Contribution Gap: Home Office’s low profit contribution suggests a smaller customer base or a product mix with significantly tighter margins.
+- 6. Top-Tier Contribution: The top five customers alone generate over $5,000 in profit, highlighting a highly concentrated value group within the database.
+Customer Value Stability: The narrow profit margin between the top four individuals suggests a consistent high-value purchasing pattern among elite clients.
+- 7. Inventory Depth Imbalance: Furnishings hold nearly 4x the product variety of Tables, indicating a highly fragmented category compared to a more consolidated furniture line.
+Portfolio Concentration: Over 50% of the total product catalog is concentrated in Furnishings, which may lead to high management overhead and stock-keeping unit (SKU) complexity.
+
+
 
 ## Recommendations
+- 1. Carrier Strategy: Conduct a performance audit of heavy-goods carriers to renegotiate SLAs or diversify vendors to reduce the 36-day peak.
+- 2. Logistics Optimization: Audit the "last-mile" delivery process for Corporate and Consumer segments to identify why they lag behind Home Office fulfillment speeds.
+- 3. Lead Time Audit: Investigate the 200+ day outliers to determine if they are due to data entry errors or genuine supply chain failures.
+  Inventory Balancing: Replicate the fulfillment model used for "Sauder" products to stabilize delivery for slower-moving furniture brands.
+- 4. Inventory Prioritization: Increase stock levels and promotional visibility for Chairs to capitalize on their proven high-return performance.
+ Cost Analysis: Conduct a deep-dive audit into Table logistics and supplier costs to identify why they yield such significantly lower margins.
+- 5. Targeted Marketing: Reallocate ad spend toward the Consumer segment to maximize ROI, given its proven high-profit conversion rate.
+Segment Expansion: Develop a "Home Office Bundle" or loyalty incentive to increase the average transaction value within the lower-performing segment.
+- 6. VIP Retention Program: Implement a "Platinum Tier" loyalty scheme for these specific individuals to prevent churn and encourage long-term brand advocacy.
+Lookalike Modeling: Use the purchasing profiles of these top five earners to build targeted marketing personas for acquiring similar high-profit prospects.
+- 7. SKU Rationalization: Audit the 186 Furnishing items to identify and phase out low-performing products, streamlining the catalog for better operational efficiency.
+Category Expansion: Evaluate if the limited Table assortment (34 products) is meeting market demand or if adding new styles could capture untapped revenue.
 
 ## Challenges
+
 
 
 
